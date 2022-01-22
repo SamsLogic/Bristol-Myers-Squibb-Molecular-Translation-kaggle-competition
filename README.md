@@ -38,7 +38,23 @@ Post tokenization, labels were required to be maintained as per the loss functio
 
 ## Image Data
 
-The image data included structural formulas of inorganic compounds. My first and foremost thought was to use a ConvRNN as my baseline model for which only minimal preprocessing was required beacuse the image data can be directly fed to the model for training. Then coming up with other model architectures it was realized that only minimal preprocessing of image data was requried.
+The image dataset included grayscale images of inorganic compounds' structural formula. Foreg:
+![image](https://user-images.githubusercontent.com/41964069/150637780-b7afe03b-12e3-4a3f-807e-10c5101e0ee0.png)
+
+As seen above, these images included a very little amount of relevant data that can be understood by the machine or rather the images were highly sparse with only little amount of data. 
 
 ## Model
-Yet to add
+
+My first and foremost thought was to use a ConvRNN as my baseline model for which only minimal preprocessing was required beacuse the image data can be directly fed to the model for training. Then coming up with other model architectures it was realized that only minimal preprocessing of image data was requried. At last, Transformer model with Bahadanu's Attention based approach was used to solve the problem as the task was to transform image data to text data.
+
+## Libraries Used
+
+1. Numpy
+2. Tensorflow
+3. Keras
+4. OpenCV
+5. Matplotlib
+6. Sklearn
+
+
+
